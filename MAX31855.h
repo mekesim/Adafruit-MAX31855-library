@@ -14,8 +14,8 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-#ifndef ADAFRUIT_MAX31855_H
-#define ADAFRUIT_MAX31855_H
+#ifndef MAX31855_H
+#define MAX31855_H
 
 #if (ARDUINO >= 100)
  #include "Arduino.h"
@@ -23,10 +23,10 @@
  #include "WProgram.h"
 #endif
 
-class Adafruit_MAX31855 {
+class MAX31855 {
  public:
-  Adafruit_MAX31855(int8_t _sclk, int8_t _cs, int8_t _miso);
-  Adafruit_MAX31855(int8_t _cs);
+  MAX31855(int8_t _sclk, int8_t _cs, int8_t _miso);
+  MAX31855(int8_t _cs);
 
   void begin(void);
   double readInternal(void);
